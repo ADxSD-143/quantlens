@@ -1,0 +1,35 @@
+🚀 QUANTLENS - SIMPLEST WAY
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ STEP 1: CMD KHOLO                                                   │
+│                                                                     │
+│ Windows Key + R                                                    │
+│ Type: cmd                                                          │
+│ Enter                                                              │
+└─────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ STEP 2: NICHE COMMAND COPY-PASTE KARO                               │
+│                                                                     │
+│ (Ctrl+A select karo, Ctrl+C copy karo, CMD me Ctrl+V paste karo)  │
+└─────────────────────────────────────────────────────────────────────┘
+
+cd "D:\project ideas\stock condition" && .venv\Scripts\activate.bat && streamlit run app.py
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ STEP 3: BROWSER KHOLO                                               │
+│                                                                     │
+│ Chrome/Firefox me type karo:                                       │
+│                                                                     │
+│ http://localhost:8501                                              │
+│                                                                     │
+│ DONE! ✅                                                            │
+└─────────────────────────────────────────────────────────────────────┘
+
+Loading ho raha hai toh 1-2 minute wait karo 🕐
+
+Agar port already in use error aaye:
+
+cd "D:\project ideas\stock condition" && .venv\Scripts\activate.bat && streamlit run app.py --server.port 8502
+
+Phir browser me jaao: http://localhost:8502

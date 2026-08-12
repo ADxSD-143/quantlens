@@ -1,0 +1,181 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║         QUANTLENS - TERMINAL COMMANDS (Copy-Paste Ready)                 ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+STEP 1: TERMINAL KHOLO
+═══════════════════════════════════════════════════════════════════════════
+
+Windows me:
+  • Windows key dabao
+  • Type: cmd
+  • Enter dabo
+  
+Ya PowerShell:
+  • Windows key dabao
+  • Type: powershell
+  • Enter dabo
+
+═══════════════════════════════════════════════════════════════════════════
+
+STEP 2: PROJECT FOLDER ME JAO
+═══════════════════════════════════════════════════════════════════════════
+
+Niche likha command copy karo aur terminal me paste karo (Ctrl+V):
+
+───────────────────────────────────────────────────────────────────────────
+cd "D:\project ideas\stock condition"
+───────────────────────────────────────────────────────────────────────────
+
+Enter dabo. 
+
+Ab aapka prompt dekh aisa hoga:
+  D:\project ideas\stock condition>
+
+═══════════════════════════════════════════════════════════════════════════
+
+STEP 3: VIRTUAL ENVIRONMENT ACTIVATE KARO
+═══════════════════════════════════════════════════════════════════════════
+
+Niche likha command copy-paste karo:
+
+───────────────────────────────────────────────────────────────────────────
+.venv\Scripts\activate.bat
+───────────────────────────────────────────────────────────────────────────
+
+Enter dabo.
+
+Iska matlab (.venv) likha aayega prompt ke start me:
+  (.venv) D:\project ideas\stock condition>
+
+═══════════════════════════════════════════════════════════════════════════
+
+STEP 4: APP START KARO
+═══════════════════════════════════════════════════════════════════════════
+
+Niche likha command copy-paste karo:
+
+───────────────────────────────────────────────────────────────────────────
+streamlit run app.py
+───────────────────────────────────────────────────────────────────────────
+
+Enter dabo.
+
+Phir terminal me dekh aisa likha aayega:
+  
+  Collecting usage statistics...
+  You can now view your Streamlit app in your browser.
+  Local URL: http://localhost:8501
+
+═══════════════════════════════════════════════════════════════════════════
+
+STEP 5: BROWSER KHOLO
+═══════════════════════════════════════════════════════════════════════════
+
+Browser (Chrome/Firefox/Edge) kholo aur yeh type karo address bar me:
+
+───────────────────────────────────────────────────────────────────────────
+http://localhost:8501
+───────────────────────────────────────────────────────────────────────────
+
+Enter dabo.
+
+Dashboard load hoga! 
+
+═══════════════════════════════════════════════════════════════════════════
+
+✅ READY!
+
+Ab aap:
+  📊 Stock select kar sakte ho (AAPL, MSFT, INFY, etc.)
+  📅 Period select kar sakte ho (1y, 2y, 5y, 10y)
+  🎚️ Regimes slider (2-5)
+  📈 Charts dekh sakte ho
+
+═══════════════════════════════════════════════════════════════════════════
+
+❌ PROBLEM: PORT 8501 ALREADY IN USE?
+
+Agar error aaye "Address already in use", to naya port use karo:
+
+───────────────────────────────────────────────────────────────────────────
+streamlit run app.py --server.port 8502
+───────────────────────────────────────────────────────────────────────────
+
+Phir browser me jaao:
+  http://localhost:8502
+
+═══════════════════════════════════════════════════════════════════════════
+
+❌ PROBLEM: ModuleNotFoundError (import nahi hora)
+
+Terminal me yeh likho:
+
+───────────────────────────────────────────────────────────────────────────
+pip install -r requirements.txt
+───────────────────────────────────────────────────────────────────────────
+
+Wait 5-10 minutes. Phir:
+
+───────────────────────────────────────────────────────────────────────────
+streamlit run app.py
+───────────────────────────────────────────────────────────────────────────
+
+═══════════════════════════════════════════════════════════════════════════
+
+❌ PROBLEM: Pandas error?
+
+Terminal me likho:
+
+───────────────────────────────────────────────────────────────────────────
+pip uninstall -y pandas
+pip install pandas
+───────────────────────────────────────────────────────────────────────────
+
+Phir:
+
+───────────────────────────────────────────────────────────────────────────
+streamlit run app.py
+───────────────────────────────────────────────────────────────────────────
+
+═══════════════════════════════════════════════════════════════════════════
+
+⏱️  KITNA TIME LAGEGA?
+
+First time:
+  • Download packages: 2-5 min
+  • Yahoo Finance data fetch: 30-60 sec
+  • Dashboard load: 5 sec
+  • TOTAL: 3-7 minutes
+
+Phir ke baad:
+  • Data cached: 15 min (fast reload!)
+
+═══════════════════════════════════════════════════════════════════════════
+
+🛑 APP BAND KARNE KE LIYE
+
+Terminal me: Ctrl + C
+
+═══════════════════════════════════════════════════════════════════════════
+
+QUICK SUMMARY (Copy-Paste Order)
+═════════════════════════════════════════════════════════════════════════════
+
+1️⃣
+cd "D:\project ideas\stock condition"
+
+2️⃣
+.venv\Scripts\activate.bat
+
+3️⃣
+streamlit run app.py
+
+4️⃣
+Browser me: http://localhost:8501
+
+5️⃣
+Done! Dashboard dekho 🎉
+
+═════════════════════════════════════════════════════════════════════════════
+
+Good luck! 🚀
