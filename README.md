@@ -1,14 +1,12 @@
-````markdown
-# QuantLens
-
-### ML Market Regime & Risk Analyzer
+QuantLens
+ML Market Regime & Risk Analyzer
 
 QuantLens is a machine-learning based quantitative finance project that analyzes historical stock-market data and identifies recurring market regimes using unsupervised learning.
 
-Instead of directly predicting stock prices, QuantLens uses **K-Means clustering** to discover different market states based on returns, volatility, RSI, momentum, trend, and volume.
+Instead of directly predicting stock prices, QuantLens uses K-Means clustering to discover different market states based on returns, volatility, RSI, momentum, trend, and volume.
 
-## Features
-
+FEATURES
+--------
 - Live historical market data using Yahoo Finance
 - Stock and analysis-period selection
 - Quantitative feature engineering
@@ -20,9 +18,8 @@ Instead of directly predicting stock prices, QuantLens uses **K-Means clustering
 - Sharpe Ratio
 - Interactive Streamlit dashboard
 
-## ML Pipeline
-
-```text
+ML PIPELINE
+-----------
 Yahoo Finance
       ↓
 OHLCV Data
@@ -38,32 +35,30 @@ Market Regimes
 Risk & Transition Analysis
       ↓
 Streamlit Dashboard
-````
 
-## Features Used
+FEATURES USED
+-------------
+- Daily Return
+- 5-Day Return
+- 20-Day Volatility
+- RSI
+- Momentum
+- Moving Average Spread
+- Volume Ratio
+- Drawdown
 
-* Daily Return
-* 5-Day Return
-* 20-Day Volatility
-* RSI
-* Momentum
-* Moving Average Spread
-* Volume Ratio
-* Drawdown
+TECH STACK
+----------
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- yfinance
+- Plotly
+- Streamlit
 
-## Tech Stack
-
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* yfinance
-* Plotly
-* Streamlit
-
-## Project Structure
-
-```text
+PROJECT STRUCTURE
+------------------
 quantlens/
 ├── app.py
 ├── data.py
@@ -76,11 +71,9 @@ quantlens/
 ├── README.md
 ├── LICENSE
 └── .gitignore
-```
 
-## Run Locally
-
-```bash
+RUN LOCALLY
+-----------
 git clone https://github.com/ADxSD-143/quantlens.git
 cd quantlens
 
@@ -90,16 +83,12 @@ python -m venv .venv
 pip install -r requirements.txt
 
 streamlit run app.py
-```
 
-## Note
-
+NOTE
+----
 QuantLens is a research and educational project. The discovered regimes describe historical market behavior and are not guaranteed predictions or financial advice.
 
-## Author
-
-**Aditya Narayan Laha**
+AUTHOR
+------
+Aditya Narayan Laha
 B.Tech CSE — IIIT Bhubaneswar
-
-```
-```
