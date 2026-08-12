@@ -1,15 +1,16 @@
+````markdown
 # QuantLens
 
 ### ML Market Regime & Risk Analyzer
 
 QuantLens is a machine-learning based quantitative finance project that analyzes historical stock-market data and identifies recurring market regimes using unsupervised learning.
 
-Instead of predicting stock prices directly, QuantLens uses **K-Means clustering** to discover different market states based on returns, volatility, RSI, momentum, trend, and volume.
+Instead of directly predicting stock prices, QuantLens uses **K-Means clustering** to discover different market states based on returns, volatility, RSI, momentum, trend, and volume.
 
 ## Features
 
 - Live historical market data using Yahoo Finance
-- Configurable stock and analysis period
+- Stock and analysis-period selection
 - Quantitative feature engineering
 - K-Means based market-regime detection
 - StandardScaler feature normalization
@@ -37,25 +38,32 @@ Market Regimes
 Risk & Transition Analysis
       ↓
 Streamlit Dashboard
+````
 
-Features Used
-Daily Return
-5-Day Return
-20-Day Volatility
-RSI
-Momentum
-Moving Average Spread
-Volume Ratio
-Drawdown
-Tech Stack
-Python
-Pandas
-NumPy
-Scikit-learn
-yfinance
-Plotly
-Streamlit
-Project Structure
+## Features Used
+
+* Daily Return
+* 5-Day Return
+* 20-Day Volatility
+* RSI
+* Momentum
+* Moving Average Spread
+* Volume Ratio
+* Drawdown
+
+## Tech Stack
+
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* yfinance
+* Plotly
+* Streamlit
+
+## Project Structure
+
+```text
 quantlens/
 ├── app.py
 ├── data.py
@@ -68,7 +76,11 @@ quantlens/
 ├── README.md
 ├── LICENSE
 └── .gitignore
-Run Locally
+```
+
+## Run Locally
+
+```bash
 git clone https://github.com/ADxSD-143/quantlens.git
 cd quantlens
 
@@ -78,11 +90,16 @@ python -m venv .venv
 pip install -r requirements.txt
 
 streamlit run app.py
-Important
+```
+
+## Note
 
 QuantLens is a research and educational project. The discovered regimes describe historical market behavior and are not guaranteed predictions or financial advice.
 
-Author
+## Author
 
-Aditya Narayan Laha
+**Aditya Narayan Laha**
 B.Tech CSE — IIIT Bhubaneswar
+
+```
+```
