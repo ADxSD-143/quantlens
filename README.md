@@ -90,5 +90,5 @@ QuantLens is a research and educational project. The discovered regimes describe
 
 AUTHOR
 ------
-Aditya Narayan Laha
+Aditya Narayan 
 B.Tech CSE — IIIT Bhubaneswar
